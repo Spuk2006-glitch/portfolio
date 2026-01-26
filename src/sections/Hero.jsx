@@ -1,3 +1,9 @@
 export const Hero=()=>{
-    return <section>ffsd</section>
+    return (
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+        <div>
+            <img/>
+        </div>
+    </section>
+    )
 }
