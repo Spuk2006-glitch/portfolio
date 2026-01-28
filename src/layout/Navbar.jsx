@@ -22,8 +22,7 @@ export const Navbar=()=>{
             <div className="hidden md:flex items-center gap-1">
                 <div className="glass rounded-full px-2 py-2 flex items-center gap-1">
                     {navLinks.map((link,index)=>(
-                        <a href={link.href} key={index} className="px-4 py-2 text-sm text-[var(--color-muted-foreground)]
-    hover:text-[var(--color-foreground)] rounded-full hover:bg-[var(--color-surface)]">
+                        <a href={link.href} key={index} className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface">
                             {link.label}
                         </a>
                     ))}
@@ -34,7 +33,7 @@ export const Navbar=()=>{
                 <Button size="sm">Contact Me</Button>
             </div>
 
-            <button className="md:hidden p-2 text-[var(--color-primary-foreground)] cursor-pointer" onClick={()=>setisMobileMenuOpen((prev)=>!prev)}>
+            <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={()=>setisMobileMenuOpen((prev)=>!prev)}>
                 {isMobileMenuOpen ?<X size={24}/>:<Menu size={24}/>}
             </button>
         </nav>
