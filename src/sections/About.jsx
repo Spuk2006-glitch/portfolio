@@ -1,3 +1,46 @@
+import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+
+const highlights=[
+    {
+        icon: Lightbulb,
+        title: "Innovation",
+        description:
+          "Staying ahead with the latest technologies and best practices.",
+    },
+    {
+        icon: Users,
+        title: "Collaboration",
+        description: "Working closely with teams to bring ideas to life.",
+    },
+    {
+        icon: Code2,
+        title: "Clean Code",
+        description:
+          "Writing maintainable, scalable code that stands the test of time.",
+    },
+    {
+        icon: Rocket,
+        title: "Performance",
+        description:
+          "Optimizing for speed and delivering lightning-fast user experiences.",
+    },
+]
+
 export const About=()=>{
-    
+    return (
+        <section className="py-32 relative overflow-hidden">
+            <div>
+                <div>
+                    <div>
+                        <span>About Me</span>
+                    </div>
+
+                    <h2>
+                        Building Software
+                        <span> with clarity, purpose, and scale.</span>
+                    </h2>
+                </div>
+            </div>
+        </section>
+    )
 }
