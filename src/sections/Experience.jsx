@@ -79,7 +79,7 @@ export const Experience=()=>{
                                         <p className="text-muted-foreground">
                                             {exp.company}
                                         </p>
-                                        <p className="text-sm text-muted foreground mt-4">
+                                        <p className="text-sm text-muted-foreground mt-4">
                                             {exp.description}
                                         </p>
                                         <div className={`flex flex-wrap gap-2 mt-4 ${idx%2===0?"md:justify-end":""}`}>
