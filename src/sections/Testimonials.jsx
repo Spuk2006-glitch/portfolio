@@ -13,7 +13,7 @@ const testimonials = [
       author: "Shrirang Patel",
       role: "Campus Relations Team,Kshitij, IIT Kharagpur",
       quote:
-        "Saptarshi demonstrated strong subject clarity and problem-solving skills as a Subject Matter Expert. He created engaging learning content and addressed student doubts effectively, contributing positively to the learning experience.",
+        "As a Campus Ambassador, Saptarshi played an important role in expanding Kshitij’s reach on his campus. His communication skills, initiative, and ability to engage students helped drive strong participation and awareness for the fest.",
       avatar:
         "/t1.jpg",
     },
