@@ -2,7 +2,7 @@ This repository contains the source code for my **personal portfolio website**, 
 
 -------------------------------
 
-## ✨ Features
+Features
 
 - Modern, responsive design
 - Interactive UI with smooth animations
@@ -16,7 +16,7 @@ This repository contains the source code for my **personal portfolio website**, 
 - Clean and maintainable codebase
 
 ---------------------------------
-## 🛠️ Tech Stack
+Tech Stack
 
 - **Frontend:** React, JavaScript
 - **Styling:** Tailwind CSS
