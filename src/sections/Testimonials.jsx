@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight,Quote} from "lucide-react";
 import { useState } from "react";
-const testimonials = [
+const testdata = [
     {
       author: "Sarah",
       role: "Web Development Lead, ACM JU Chapter",
@@ -32,17 +32,17 @@ export const Testimonials=()=>{
     const [activeIdx, setActiveIdx] = useState(0);
 
     const next = () => {
-        setActiveIdx((prev) => (prev + 1) % testimonials.length);
+        setActiveIdx((prev) => (prev + 1) % testdata.length);
     };
 
     const previous = () => {
         setActiveIdx(
-        (prev) => (prev - 1 + testimonials.length) % testimonials.length
+        (prev) => (prev - 1 + testdata.length) % testdata.length
         );
     };
 
     return (
-        <section>
+        <section id="testimonials">
             <div
                 className="absolute top-1/2 left-1/2
             w-[800px] h-[800px] bg-primary/5
@@ -87,15 +87,15 @@ export const Testimonials=()=>{
                             </div>
 
                             <blockquote className="text-xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">
-                                "{testimonials[activeIdx].quote}"
+                                "{testdata[activeIdx].quote}"
                             </blockquote>
 
                             <div className="flex items-center gap-4">
-                                <img src={testimonials[activeIdx].avatar} alt={testimonials[activeIdx].author} className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"/>
+                                <img src={testdata[activeIdx].avatar} alt={testdata[activeIdx].author} className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"/>
                                 <div >
-                                    <div className="font-semibold">{testimonials[activeIdx].author}
+                                    <div className="font-semibold">{testdata[activeIdx].author}
                                     </div>
-                                    <div className="text-sm text-muted-foreground">{testimonials[activeIdx].role}
+                                    <div className="text-sm text-muted-foreground">{testdata[activeIdx].role}
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@ export const Testimonials=()=>{
                                 <ChevronLeft/>
                             </button>
                             <div className="flex gap-2">
-                                {testimonials.map((_,idx)=>(
+                                {testdata.map((_,idx)=>(
                                     <button onClick={() => setActiveIdx(idx)} className={`w-2 h-2 rounded-full transition-all duration-300 ${idx===activeIdx?"w-8 bg-primary":"bg-muted-foreground/30 hover:bg-muted-foreground/50"}`}/>
                                 ))}
                             </div>

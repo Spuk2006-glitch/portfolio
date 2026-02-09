@@ -38,9 +38,14 @@ export const Navbar=()=>{
                 </div>
             </div>
 
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block" href="#contact">
                 <Button size="sm">Contact Me</Button>
-            </div>
+            </div> */}
+
+            <a href="#contact">
+            <Button size="sm">Contact Me</Button>
+            </a>
+
 
             <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={()=>setisMobileMenuOpen((prev)=>!prev)}>
                 {isMobileMenuOpen ?<X size={24}/>:<Menu size={24}/>}
@@ -54,9 +59,9 @@ export const Navbar=()=>{
                             {link.label}
                         </a>
                     ))}
-                    <Button onClick={()=>setisMobileMenuOpen(false)}>
-                        Contact Me
-                    </Button>
+                    <a href="#contact" onClick={() => setisMobileMenuOpen(false)}>
+                    <Button>Contact Me</Button>
+                    </a>
             </div>
         </div>)}
     </header>

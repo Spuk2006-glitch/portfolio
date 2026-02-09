@@ -26,7 +26,7 @@ export const Footer = () => {
               SU<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Saptarshi Upadhyay. All rights reserved.
+              © {currentYear} <a href="#" className="hover:text-primary transition-colors">Saptarshi Upadhyay</a>. All rights reserved.
             </p>
           </div>
 
